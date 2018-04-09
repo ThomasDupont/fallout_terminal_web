@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: MyFont;
+    font-weight: normal;
+    font-style: normal;
+
+    src : url('assets/fonts/monofonto.eot');
+    src : url('assets/fonts/monofonto.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/monofonto.woff') format('woff'),
+            url('assets/fonts/monofonto.ttf') format('truetype'),
+            url('assets/fonts/monofonto.svg#monofonto') format('svg');
+
+}
+
+* {
+    margin : 0;
+    padding : 10px;
+    outline : none;
+}
+
+body {
+    background-color: #000;
+    color : #18FF62;
+    font-size: 24px;
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#prompt, button {
+    background-color: inherit;
+    color : inherit;
+    font-size: inherit;
+    border-color: #000;
+    caret-color: #18FF62;
+    outline: none;
+    box-shadow:none;
+    -moz-box-shadow: none;
+}
+
+.action:focus {
+    background-color: #18FF62;
+    color:#000;
+}
