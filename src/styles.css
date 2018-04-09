@@ -38,6 +38,7 @@ body {
     caret-color: #18FF62;
     outline: none;
     box-shadow:none;
+    border:none;
     -moz-box-shadow: none;
 }
 
