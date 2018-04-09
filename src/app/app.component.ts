@@ -185,7 +185,7 @@ export class AppComponent implements OnInit {
             },
             daily: function (context: any, args: [string], help: boolean = false) {
                 if (help) {
-                    context.print(';argument: date;Date format DD/MM/YYYY>§', context.interval);
+                    context.print(';argument: date;Date format DD/MM/YYYY;>§', context.interval);
                     return;
                 }
                 const arg = args.shift();
