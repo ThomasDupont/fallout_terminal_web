@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     }
 
     async print (text: string, interval: number = 100) {
+        this.promptVisibility = false;
         for (let i = 0; i < text.length ; i++) {
             await this.timeout(interval);
             const e = text[i];
@@ -46,6 +47,7 @@ export class AppComponent implements OnInit {
                 this.first += e;
             }
         }
+        this.promptVisibility = true;
     }
 
     timeout(ms: number) {
